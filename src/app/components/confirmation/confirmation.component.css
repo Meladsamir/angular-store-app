@@ -1,0 +1,30 @@
+.confirmation-container {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.confirmation-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmation-header {
+  color: #33e5bc;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.confirmation-item {
+  margin-bottom: 30px;
+}
+
+img {
+  width: 500px;
+}
