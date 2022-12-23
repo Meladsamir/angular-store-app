@@ -1,0 +1,9 @@
+<div class="product-container-dev " *ngIf="!Show">
+  <div class="product-index">
+    <app-product-item *ngFor="let product of productList" [product]="product"
+      (showItemDetail)="showItemDetail($event)"></app-product-item>
+  </div>
+</div>
+
+<app-product-item *ngIf="Show" [isDetail]="true" [product]="currentProduct"
+  (showProductList)="showProductList($event)"></app-product-item>

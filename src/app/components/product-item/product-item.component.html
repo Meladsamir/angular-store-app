@@ -1,0 +1,39 @@
+<div *ngIf="!isDetail" class="product-container">
+  <img class="product-image" src="{{product.url}}" alt="Photo of a product" (click)="onClickItem(product)">
+  <div>
+    <p>
+      {{ product.name}}
+    </p>
+    <p>
+      ${{product.price}}
+      <select class="select-input form-select" id='select' [(ngModel)]="product.amount">
+        <option *ngFor="let item of amountsList" [ngValue]="item">
+          {{item}}</option>
+      </select>
+
+      <input class="btn btn-primary select-input" type="button" value="Add To Cart" (click)="addToCart(product)" />
+  </div>
+</div>
+
+<div *ngIf="isDetail" class="detail-container">
+  <img class="card-img-top" src="{{product.url}}" alt="Photo of a product">
+  <div class="detail-item">
+    <h1>
+      {{ product.name}}
+    </h1>
+    <p>
+      ${{product.price}}
+    </p>
+    <p>
+      {{product.description}}
+    </p>
+
+    <select class="select-input form-select" [(ngModel)]="product.amount">
+      <option *ngFor="let item of amountsList" [ngValue]="item">
+        {{item }}</option>
+    </select>
+    <input class="btn btn-primary select-input" type="button" value="Add To Cart" (click)="addToCart(product)" />
+    <button class="btn back-link " type="button" value="Back To Product List" (click)="LoadProductList()">Back To
+      Product List</button>
+  </div>
+</div>
