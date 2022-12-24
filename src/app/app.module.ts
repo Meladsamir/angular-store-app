@@ -10,7 +10,6 @@ import { CartComponent } from './components/cart/cart.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import { CheckoutFromComponent } from './components/checkout-from/checkout-from.component'
 import { ConfirmationComponent } from './components/confirmation/confirmation.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -21,7 +20,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ProductListComponent,
     CartComponent,
     ProductItemComponent,
-    CheckoutFromComponent,
     ConfirmationComponent,
   ],
   imports: [
