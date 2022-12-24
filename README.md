@@ -12,7 +12,7 @@
 ## Routes:
 * ###### "[base url]/"
 * ###### "[base url]/cart"
-###### base urlby default is :http://localhost:4200/
+###### base url by default is ```http://localhost:4200/```
 ## to run this project:
 * ```npm install ```
 * ``` ng serve ```
